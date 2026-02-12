@@ -1,0 +1,139 @@
+.growth-results-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .growth-results-section {
+    padding: 80px 0;
+  }
+}
+
+.growth-results-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.growth-results-header {
+  margin-bottom: 64px;
+  max-width: 672px;
+}
+
+@media (min-width: 768px) {
+  .growth-results-header {
+    margin-bottom: 96px;
+  }
+}
+
+.growth-results-heading {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #171717;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .growth-results-heading {
+    font-size: 48px;
+  }
+}
+
+.growth-results-description {
+  font-size: 18px;
+  color: #737373;
+  line-height: 1.6;
+}
+
+.growth-results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .growth-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .growth-results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.growth-metric-card {
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #f5f5f5;
+  background: #ffffff;
+  transition: all 0.3s;
+}
+
+.growth-metric-card:hover {
+  border-color: #e5e5e5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.growth-metric-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  margin-bottom: 24px;
+}
+
+.growth-metric-card:hover .growth-metric-icon-wrapper {
+  background: #171717;
+}
+
+.growth-metric-icon {
+  width: 24px;
+  height: 24px;
+  color: #171717;
+  transition: color 0.3s;
+}
+
+.growth-metric-card:hover .growth-metric-icon {
+  color: #ffffff;
+}
+
+.growth-metric-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.growth-metric-value {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #171717;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .growth-metric-value {
+    font-size: 36px;
+  }
+}
+
+.growth-metric-label {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #171717;
+}
+
+.growth-metric-description {
+  font-size: 14px;
+  color: #737373;
+  line-height: 1.6;
+}
+

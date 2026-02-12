@@ -1,0 +1,236 @@
+.what-we-do-section {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+@media (min-width: 1024px) {
+  .what-we-do-section {
+    padding: 80px 0;
+  }
+}
+
+.what-we-do-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.what-we-do-header {
+  text-align: center;
+  margin-bottom: 64px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.what-we-do-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  margin-bottom: 24px;
+  border-radius: 9999px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  font-size: 12px;
+  font-weight: 500;
+  color: #22c55e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.what-we-do-badge-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.what-we-do-heading {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #171717;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-heading {
+    font-size: 48px;
+  }
+}
+
+.what-we-do-subheading {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #525252;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-subheading {
+    font-size: 32px;
+  }
+}
+
+.what-we-do-description {
+  font-size: 18px;
+  color: #737373;
+  line-height: 1.7;
+}
+
+.what-we-do-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .what-we-do-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .what-we-do-grid {
+    gap: 40px;
+  }
+}
+
+.what-we-do-card {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.what-we-do-card:hover {
+  border-color: #d4d4d4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.what-we-do-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.what-we-do-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.what-we-do-card:hover .what-we-do-icon-wrapper {
+  background: #171717;
+  transform: scale(1.1);
+}
+
+.what-we-do-icon {
+  width: 24px;
+  height: 24px;
+  color: #171717;
+  transition: color 0.3s;
+}
+
+.what-we-do-card:hover .what-we-do-icon {
+  color: #ffffff;
+}
+
+.what-we-do-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #171717;
+  margin: 0;
+  flex: 1;
+}
+
+.what-we-do-card-description {
+  font-size: 15px;
+  color: #525252;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.what-we-do-card-benefit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #f5f5f5;
+  margin-top: auto;
+}
+
+.what-we-do-benefit-icon {
+  width: 16px;
+  height: 16px;
+  color: #22c55e;
+  transition: transform 0.3s;
+}
+
+.what-we-do-card:hover .what-we-do-benefit-icon {
+  transform: translateX(4px);
+}
+
+.what-we-do-benefit-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.what-we-do-cta {
+  text-align: center;
+  padding: 48px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+}
+
+.what-we-do-cta-text {
+  font-size: 18px;
+  color: #525252;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.what-we-do-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #171717;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+.what-we-do-cta-button:hover {
+  background: #262626;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.what-we-do-cta-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s;
+}
+
+.what-we-do-cta-button:hover .what-we-do-cta-icon {
+  transform: translateX(4px);
+}
+
