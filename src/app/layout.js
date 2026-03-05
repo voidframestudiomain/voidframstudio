@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={inter.variable}>
         {children}
         <Script
           src="https://code.iconify.design/3/3.1.0/iconify.min.js"
