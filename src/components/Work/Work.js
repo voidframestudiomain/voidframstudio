@@ -31,7 +31,7 @@ export default function Work() {
                 <div className="work-metrics">
                   {study.metrics.map((metric, metricIndex) => (
                     <div key={metricIndex}>
-                      {metricIndex > 0 && <div className="work-metrics-divider"></div>}
+                      {/* {metricIndex > 0 && <div className="work-metrics-divider"></div>} */}
                       <div className="work-metric">
                         <div className="work-metric-value">{metric.value}</div>
                         <div className="work-metric-label">{metric.label}</div>
