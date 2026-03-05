@@ -1,77 +1,177 @@
 .contact-section {
-  padding: 80px 0;
+  padding: 120px 0;
   position: relative;
   overflow: hidden;
+  background: #ffffff;
 }
 
 .contact-container {
-  max-width: 896px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  text-align: center;
   position: relative;
   z-index: 10;
 }
 
-.contact-heading {
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: #171717;
-  margin-bottom: 32px;
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
 }
 
-@media (min-width: 768px) {
-  .contact-heading {
-    font-size: 60px;
+@media (min-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
   }
 }
 
-.contact-content {
+.contact-left-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 24px;
 }
 
-.contact-cta {
+.contact-info-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-card:hover {
+  border-color: #d4d4d4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.contact-info-card-whatsapp {
+  position: relative;
+}
+
+.contact-info-card-whatsapp:hover {
+  border-color: #25d366;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(37, 211, 102, 0.02) 100%);
+}
+
+.contact-info-card-whatsapp:hover .contact-info-icon {
+  color: #25d366;
+  transform: scale(1.1);
+}
+
+.contact-info-card-whatsapp .contact-info-icon {
+  transition: all 0.3s ease;
+}
+
+.contact-info-icon {
+  width: 32px;
+  height: 32px;
+  color: #171717;
+  flex-shrink: 0;
+  stroke-width: 1.5;
+}
+
+.contact-info-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #171717;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.contact-info-value {
+  font-size: 15px;
+  color: #525252;
+  margin: 0;
+  word-break: break-all;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.contact-right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-cta-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.contact-cta-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #171717;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .contact-cta-heading {
+    font-size: 32px;
+  }
+}
+
+.contact-cta-description {
+  font-size: 15px;
+  color: #737373;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.contact-cta-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 40px;
+  gap: 10px;
+  padding: 16px 32px;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
   background: #171717;
-  border-radius: 9999px;
-  transition: all 0.3s;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+  margin-top: auto;
 }
 
-.contact-cta:hover {
+.contact-cta-primary:hover {
   background: #262626;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
-.contact-subtitle {
-  margin-top: 24px;
-  font-size: 14px;
-  color: #737373;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+.contact-cta-primary:active {
+  transform: translateY(0);
 }
 
-.contact-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  filter: blur(100px);
-  z-index: -1;
-  opacity: 0.6;
-  pointer-events: none;
+.contact-cta-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
