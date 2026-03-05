@@ -27,12 +27,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <head>
+        {/* Fonts used */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={inter.variable}>
+
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
         <Script
           src="https://code.iconify.design/3/3.1.0/iconify.min.js"

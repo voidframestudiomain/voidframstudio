@@ -1,0 +1,103 @@
+.heroSection{
+    padding-top: 126px;
+}
+
+.heroTag{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 50px;
+    max-width: fit-content;
+    padding: 4px 12px;
+    margin: 0 auto;
+}
+.purpleDot{
+    background: #6366F1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+}
+.heroTagText{
+     color: #475569;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.heroTextWrapper{
+    max-width: 940px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.HeroText{
+     color: #0F172A;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+}
+.expensiveSpan{
+    color: #94A3B8;
+}
+.smarterSpan{
+     background: linear-gradient(90deg, #6366F1 0%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.HeroSubText{
+    color: #64748B;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.darkBtn{
+    padding: 12px 32px;
+    background: #0F172A;
+    border: none;
+    border-radius: 12px;
+        font-family: Inter, sans-serif;
+}
+.whiteBtn{
+    padding: 12px 32px;
+    color: #475569;
+    background: #fff;
+    border: 1PX solid #E2E8F0;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+        font-family: Inter, sans-serif;
+}
+.btnWrapper{
+    display: flex;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding-top: 8px;
+}
+.heroSectionWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}

@@ -1,0 +1,63 @@
+.navBar{
+    padding: 18px 0;
+    /* position: relative; */
+    border-bottom: 2px solid rgba(241, 245, 249, 0.50);
+   
+}
+/* .navBar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+
+  background: rgba(241, 245, 249, 0.6);
+  filter: blur(2px);
+} */
+
+
+.Logo{
+    max-width: 34px;
+    width: 100%;
+}
+.heading{
+    font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+color: #0F172A;
+}
+.navbarLeftWrapper{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    max-width: 200px;
+}
+.navbarWrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.navbarCenterWrapper{
+    display: flex;
+    gap: 32px;
+}
+.navSubText{
+      color: #64748B;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.roundedDarkBtn{
+    padding: 8px 16px ;
+    border-radius: 50px;
+background: #0F172A;
+border: none;
+display: flex;
+gap: 8px;
+    align-items: center;
+}
